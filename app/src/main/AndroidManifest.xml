@@ -14,6 +14,21 @@
         android:theme="@style/Theme.DeBoua"
         tools:targetApi="31">
         <activity
+            android:name=".activity_welcome_input"
+            android:exported="false" />
+        <activity
+            android:name=".activity_welcome"
+            android:exported="false" />
+        <activity
+            android:name=".activity_time_feeling"
+            android:exported="false" />
+        <activity
+            android:name=".activity_how_feeling"
+            android:exported="false" />
+        <activity
+            android:name=".activity_calendar"
+            android:exported="false" />
+        <activity
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>

@@ -1,3 +1,21 @@
 <resources>
     <string name="app_name">de boua</string>
+    <string name="start">COMEÇAR</string>
+    <string name="insert_todays_date">PARA COMEÇAR, INSIRA A DATA DE HOJE</string>
+    <string name="next">PRÓXIMO</string>
+    <string name="how_feeling_today">COMO ESTÁ SE SENTINDO HOJE?</string>
+    <string name="im_okay">ESTOU BEM</string>
+    <string name="im_not_okay">NÃO ESTOU MUITO BEM</string>
+    <string name="im_not_well">ESTOU MAL</string>
+    <string name="im_really_not_well">ESTOU MUITO MAL</string>
+    <string name="man_not_so_well_staring_computer">Homem não muito bem olhando para o computador</string>
+    <string name="how_much_time_feeling">VOCÊ TEM SE SENTINDO ASSIM HÁ QUANTO TEMPO?</string>
+    <string name="last_hours">NAS ÚLTIMAS HORAS</string>
+    <string name="last_days">NOS ÚLTIMOS DIAS</string>
+    <string name="last_weeks">NAS ÚLTIMAS SEMANAS</string>
+    <string name="last_month">NO ÚLTIMO MÊS</string>
+    <string name="welcome_environment">AMBIENTE DE ACOLHIMENTO</string>
+    <string name="welcome_message">seja muito bem vindo ao ambiente de acolhimento! Aqui você poderá ficar tranquilo e contar tudo o que vocè precisa! lembre-se, estamos aqui para te ajudar</string>
+    <string name="space_all_yours">olá! aqui o espaço é todo seu! fique a vontade para contar como você se sente, pode contar como foi seu dia, o que estudou, uma novidade. Conte tudo que você achar necessário. lembre-se, esse espaço é todo seu :)</string>
+    <string name="start_typing">começar a digitar :)</string>
 </resources>
