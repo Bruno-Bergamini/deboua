@@ -5,7 +5,6 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/even_softer_pink"
-    android:onClick="closeFilter"
     tools:context=".list_of_feelings">
 
     <androidx.cardview.widget.CardView
@@ -13,7 +12,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:backgroundTint="#b367ee"
-        android:visibility="visible"
+        android:visibility="invisible"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
@@ -21,53 +20,11 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent">
 
-            <EditText
-                android:id="@+id/min_date"
-                android:layout_width="226dp"
-                android:layout_height="63dp"
-                android:layout_marginStart="52dp"
-                android:layout_marginTop="104dp"
-                android:background="@null"
-                android:ems="10"
-                android:hint="data inicial"
-                android:inputType="date"
-                android:paddingBottom="20dp"
-                android:shadowColor="#FFFFFF"
-                android:textColor="@color/soft_pink"
-                android:textColorHighlight="#FFFFFF"
-                android:textColorHint="@color/soft_pink"
-                android:textColorLink="#FFFFFF"
-                android:textSize="24dp"
-                android:textStyle="bold"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
-
-            <EditText
-                android:id="@+id/max_date"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="52dp"
-                android:layout_marginTop="40dp"
-                android:background="@null"
-                android:ems="10"
-                android:hint="data final"
-                android:inputType="date"
-                android:paddingBottom="20dp"
-                android:shadowColor="#FFFFFF"
-                android:singleLine="false"
-                android:textColor="@color/soft_pink"
-                android:textColorHighlight="#FFFFFF"
-                android:textColorHint="@color/soft_pink"
-                android:textColorLink="#FFFFFF"
-                android:textSize="24dp"
-                android:textStyle="bold"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/min_date" />
-
             <ImageView
                 android:id="@+id/imageView9"
                 android:layout_width="match_parent"
-                android:layout_height="190dp"
+                android:layout_height="183dp"
+                android:layout_marginBottom="-5dp"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.0"
@@ -89,6 +46,62 @@
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="@+id/imageView9"
                 app:layout_constraintVertical_bias="1.0" />
+
+            <TextView
+                android:id="@+id/label_min"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="48dp"
+                android:layout_marginTop="164dp"
+                android:onClick="getDateTime"
+                android:text="data inicial"
+                android:textColor="@color/soft_pink"
+                android:textSize="28dp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/min_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="48dp"
+                android:layout_marginTop="16dp"
+                android:onClick="getDateTime"
+                android:text="-----"
+                android:textColor="@color/soft_pink"
+                android:textSize="28dp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/label_min" />
+
+            <TextView
+                android:id="@+id/label_max"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="48dp"
+                android:layout_marginTop="80dp"
+                android:onClick="getDateTime"
+                android:text="data final"
+                android:textColor="@color/soft_pink"
+                android:textSize="28dp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/label_min" />
+
+            <TextView
+                android:id="@+id/max_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="48dp"
+                android:layout_marginTop="20dp"
+                android:onClick="getDateTime"
+                android:text="-----"
+                android:textColor="@color/soft_pink"
+                android:textSize="28dp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/label_max" />
 
         </androidx.constraintlayout.widget.ConstraintLayout>
 
@@ -125,8 +138,8 @@
         android:id="@+id/scrollView2"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:layout_marginTop="204dp"
         android:visibility="visible"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         tools:layout_editor_absoluteX="0dp">
 
