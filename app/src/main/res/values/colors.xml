@@ -2,6 +2,9 @@
 <resources>
     <color name="purple">#B367EF</color>
     <color name="strong_purple">#8415DB</color>
+    <color name="even_stronger_purple">#BF75F9</color>
+    <color name="variation_purple">#CA86FF</color>
+    <color name="even_softer_pink">#E2C8F6</color>
     <color name="soft_pink">#E6CCFB</color>
     <color name="strong_pink">#DAB6F5</color>
     <color name="pastel_yellow">#FFEBA9</color>

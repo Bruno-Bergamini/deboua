@@ -5,6 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/purple"
+    android:textAlignment="viewStart"
     tools:context=".activity_welcome_input">
 
     <TextView
@@ -19,7 +20,8 @@
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        />
 
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/textInputLayout"
@@ -32,14 +34,16 @@
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputEditText
-        android:id="@+id/textInputEditText"
-        android:layout_width="373dp"
-        android:layout_height="210dp"
-        android:layout_marginTop="40dp"
-        android:background="@color/soft_pink"
+        android:id="@+id/message"
+        android:layout_width="361dp"
+        android:layout_height="205dp"
+        android:layout_marginTop="52dp"
+        android:background="@drawable/rounded"
+        android:gravity="start"
         android:hint="@string/start_typing"
         android:padding="20dp"
         android:textAlignment="viewStart"
+        android:textColor="@color/strong_pink"
         android:textColorHint="@color/strong_pink"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
@@ -57,15 +61,17 @@
 
     <Button
         android:id="@+id/nextButton4"
-        android:layout_width="119dp"
-        android:layout_height="60dp"
+        android:layout_width="126dp"
+        android:layout_height="46dp"
         android:background="#00FFFFFF"
+        android:onClick="nextButton"
         android:text="@string/next"
         android:textSize="16sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/imageView7"
-        app:layout_constraintVertical_bias="0.887" />
+        app:layout_constraintVertical_bias="0.885" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
