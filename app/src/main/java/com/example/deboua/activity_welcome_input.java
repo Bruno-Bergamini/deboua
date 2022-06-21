@@ -22,8 +22,7 @@ public class activity_welcome_input extends AppCompatActivity {
 
     public void nextButton(View view) {
         TextInputEditText messageView = (TextInputEditText) findViewById(R.id.message);
-        String message = messageView.getText().toString();
-        System.out.println(message);
+        String message = messageView.getText().toString() + "";
         if (message != "" && message != null) {
             Intent intent = new Intent(this, list_of_feelings.class);
             Feeling feeling = new Feeling(message, new Date().getTime());
